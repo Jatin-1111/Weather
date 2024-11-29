@@ -24,12 +24,12 @@ function animateValue(element, start, end, duration) {
 }
 
 function fetchWeatherData() {
-    const city = city.value.trim();
+    const City = city.value.trim();
 
-    if (city === '') {
+    if (City === '') {
         alertBox.style.display = 'block';
         alertBox.classList.add('fadeIn');
-        alertBox.innerText = 'Please enter a city name!';
+        alertBox.innerText = 'Please enter a City name!';
         setTimeout(() => {
             alertBox.style.display = 'none';
             alertBox.classList.remove('fadeIn');
@@ -37,7 +37,7 @@ function fetchWeatherData() {
         return;
     }
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${City}&units=metric&appid=${APIKey}`)
         .then((response) => response.json())
         .then((data) => {
             if (data.cod !== 200) {
