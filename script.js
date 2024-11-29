@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 const search = document.querySelector('#search-btn');
-const cityInput = document.querySelector('#city-input');
+const city = document.querySelector('#city');
 const alertBox = document.querySelector('#alert-box');
 const temp = document.querySelector('#temperature');
 const pressure = document.querySelector('#pressure');
@@ -24,7 +24,7 @@ function animateValue(element, start, end, duration) {
 }
 
 function fetchWeatherData() {
-    const city = cityInput.value.trim();
+    const city = city.value.trim();
 
     if (city === '') {
         alertBox.style.display = 'block';
@@ -70,7 +70,7 @@ function fetchWeatherData() {
 
 search.addEventListener('click', fetchWeatherData);
 
-cityInput.addEventListener('keypress', (e) => {
+city.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         fetchWeatherData();
     }

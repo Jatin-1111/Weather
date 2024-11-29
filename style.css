@@ -100,7 +100,7 @@ h1 {
 div p{
     font-weight: 500;
 }
-/* Fade-in Animation */
+
 .fadeIn {
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -114,7 +114,6 @@ div p{
     }
 }
 
-/* Fade-out Animation */
 .fadeOut {
     animation: fadeOut 0.5s ease-in-out;
 }
