@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01799796;
+    color: #fff;
+}
+
+/* Container styles */
+.container {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #005c74;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 75%;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #e6f5fb;
+    border-radius: 8px;
+}
+
+.search-box input::placeholder {
+    color: #555;
+}
+
+.search-box button {
+    width: 46px;
+    height: 46px;
+    background-color: #e6f5fb;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box button:hover {
+    color: #fff;
+    background-color: #ababab;
+}
+
+
+#alert-box {
+    display: none;
+    padding: 10px;
+    background-color: #ffcccb;
+    color: #333;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#temperature{
+    font-weight: 700;
+    font-size: 20px;
+}
+.weather-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+div p{
+    font-weight: 500;
+}
+/* Fade-in Animation */
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-out Animation */
+.fadeOut {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
